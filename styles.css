@@ -169,6 +169,140 @@ position: relative;
     margin-bottom: -30px;
     transition: 1s ease;
 }
+
+/* SREACH TAB AREA */
+.nav-bar .logo-sreach-tab h1{
+    font-size: 8rem;
+    font-weight: 100;
+    letter-spacing: -27px;
+    letter-spacing: 127xp;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    transition: 1s ease;
+}
+
+.sreach-form {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: repeating-radial-gradient(#302f2f, transparent 343px);
+    transition: 1s ease;
+}
+label.sreach-menu {
+    margin-top: -210px;
+    transition: 1s ease;
+}
+input[type="search"] {
+    width: 100vw;
+    height: 8vh;
+}
+
+.infomation{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.info-item {
+    font-size: 9px;
+    font-weight: 100;
+    transition: 0.5s ease;
+}
+.info-item h4{
+    color: yellow;
+}
+.info-item a:hover{
+    color: yellow;
+}
+
+.last-infomation{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 100;
+    padding: 20px;
+}
+.last-infomation span{
+    font-size: 8px;
+    font-family: "News Cycle",sans-serif;
+    color: #ddd5d5;
+}
+
+/* end SREACH TAB AREA */
+
+/* START LOGIN TAB AREA */
+form.login-form {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0rem;
+    padding-left: 3rem;
+    transition: 1s ease;
+}
+.login-tab {
+    display: flex;
+    gap: 4rem;
+    transition: 1s ease;
+}
+.dang-nhap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 1s ease;
+}
+input#email, input#password {
+    width: 100%;
+    height: 2rem;
+    background: #333;
+    border-bottom: 1px solid white;
+    
+}
+
+input#email:hover, input#password:hover{
+   background-color: #fff;
+}
+
+input#email::placeholder, input#password::placeholder{
+    color: #ddd5d5;
+}
+input[type="button"] {
+    background: #333;
+    border: 1px solid white;
+    height: 34px;
+    color: white;
+    font-size: 10px;
+    width: 58vh;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color: #fff;
+    color: black;
+}
+.dang-nhap h3, .dang-ki h3{
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+.dang-nhap a {
+    font-size: 9px;
+    text-transform: none;
+}
+
+
+
+/* END LOGIN TAB AREA */
+
 .h1.active , .h1:hover{
     color: yellow;
     
@@ -214,7 +348,7 @@ position: relative;
     font-size: 12px;
     border: 1px solid #333;
     text-align: end;
-    /* padding-left: 0px; */
+    
 }
 
 .sreach-bar.active, .sreach-bar:hover{
@@ -403,10 +537,40 @@ main .main-images img , video{
    .extra-menu{
     grid-template-columns: auto 13rem auto auto auto;
   }
+  .login-tab {
+    display: flex;
+    
+    flex-wrap: wrap;
+    height: 20rem;
+    }
+   form.login-form {
+    padding: 0px;
+    }
+    .dang-nhap {
+        padding: 20px;
+        width:80vw;
+        margin-bottom: -80px;
+        gap: 1rem;
+       
+    }
+    input[type="button"]{
+        width: 75vw;
+      }
+      .dang-ki{
+        padding: 20px;
+      }
  }
 
- @media (min-width:1420px){
+ @media (min-width:1373px){
     .container{
-      gap: 20rem;
+        display: flex;
+        justify-items: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .container .login-bar, .sreach-bar {
+        text-align: end;
+        flex: 1;
+        justify-content: flex-end;
     }
   }

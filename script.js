@@ -45,6 +45,7 @@ const handleScroll = (event) => {
                 activeSlide -= 1;
             }
         }
+        
 
         // Cập nhật trạng thái của các slide
         updateSlideStatus();
@@ -88,4 +89,23 @@ startAutoScroll();
 
 // Thêm sự kiện cuộn chuột
 window.addEventListener("wheel", handleScroll);
+
+
+
+//SREACH BAR MESSENGER
+const userInput = document.getElementById('userInput');
+const loginButton = document.getElementById('register-submit') ;
+
+
+userInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        alert('Comming soon.....')
+    }
+});
+
+loginButton.addEventListener('click', function(){
+    alert("comming soon..");
+})
+
+
 
