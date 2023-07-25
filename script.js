@@ -1,7 +1,7 @@
 const menu = document.querySelector('.icons');
 const togge = document.querySelector('.extra-menu') ;
 const navbar= document.querySelector('.h1');
-const loginBar = document.querySelector('.login');
+const loginBar = document.querySelector('.login-bar');
 const sreachBar = document.querySelector('.sreach-bar');
 
 

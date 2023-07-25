@@ -335,7 +335,7 @@ input[type="submit"]:hover{
     white-space: nowrap;
     transition: 1s ease;
 }
-.login.active{
+.login-bar.active a{
     color: yellow;
 }
 
@@ -527,6 +527,13 @@ main .main-images img , video{
     font-size: 17px;
     margin-top: -121px;
     margin-left: -24px;
+}
+
+.new-arrivar{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 0.6rem;
 }
 
 .my-self {
