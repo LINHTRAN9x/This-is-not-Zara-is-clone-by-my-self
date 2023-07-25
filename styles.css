@@ -163,11 +163,12 @@ position: relative;
 .nav-bar .logo h1{
     font-size: 13rem;
     font-weight: 100;
-    letter-spacing: -27px;
+    letter-spacing: -66px;
     letter-spacing: 127xp;
-    margin-top: -46px;
-    margin-bottom: -30px;
+    margin-top: -52px;
+    margin-bottom: -46px;
     transition: 1s ease;
+    font-family: "GFS Didot",sans-serif;
 }
 
 /* SREACH TAB AREA */
@@ -179,6 +180,7 @@ position: relative;
     margin-top: -30px;
     margin-bottom: -30px;
     transition: 1s ease;
+    font-family: "GFS Didot",sans-serif;
 }
 
 .sreach-form {
@@ -704,7 +706,10 @@ main .main-images img , video{
 
 @media (max-width:900px){
     .nav-bar .logo .h1{
-      font-size:6rem;
+        font-size: 5rem;
+        letter-spacing: -26px;
+        margin-top: -18px;
+        margin-bottom: -20px;
     }
    .nav-bar .nav-item ul{
      display:flex;
