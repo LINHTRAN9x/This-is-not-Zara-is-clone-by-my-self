@@ -4,12 +4,14 @@ const navbar= document.querySelector('.h1');
 const loginBar = document.querySelector('.login');
 const sreachBar = document.querySelector('.sreach-bar');
 
+
 menu.addEventListener('click', ()=>{
     menu.classList.toggle('active');
     togge.classList.toggle('active');
     navbar.classList.toggle('active');
     loginBar.classList.toggle('active');
     sreachBar.classList.toggle('active');
+
 })
 
 
@@ -94,7 +96,7 @@ window.addEventListener("wheel", handleScroll);
 
 //SREACH BAR MESSENGER
 const userInput = document.getElementById('userInput');
-const loginButton = document.getElementById('register-submit') ;
+const loginButton = document.getElementById('login-submit') ;
 
 
 userInput.addEventListener('keydown', function(event) {
@@ -107,5 +109,31 @@ loginButton.addEventListener('click', function(){
     alert("comming soon..");
 })
 
+
+
+
+let slideIndex = 0;
+
+showSlide(slideIndex);
+
+function prevSlide() {
+  showSlide(slideIndex -= 1);
+}
+
+function nextSlide() {
+  showSlide(slideIndex += 1);
+}
+
+function showSlide(n) {
+  const slides = document.querySelectorAll('.slide');
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
+
+  slides[slideIndex].style.display = 'block';
+}
 
 
