@@ -21,7 +21,7 @@ let activeSlide = 0;
 let autoScrollInterval;
 let isScrolling = false;
 let isAutoScrolling = false;
-const idleTime = 5000;
+const idleTime = 7000;
 
 const handleScroll = (event) => {
     // Xóa interval tự động cuộn slide nếu có
@@ -82,7 +82,7 @@ const startAutoScroll = () => {
                 clearInterval(autoScrollInterval);
                 isAutoScrolling = false;
             }
-        }, 5000);
+        }, 7000);
     }
 };
 
@@ -101,12 +101,12 @@ const loginButton = document.getElementById('login-submit') ;
 
 userInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-        alert('Comming soon.....')
+        alert('Coming soon.....')
     }
 });
 
 loginButton.addEventListener('click', function(){
-    alert("comming soon..");
+    alert("Coming soon..");
 })
 
 
@@ -137,3 +137,32 @@ function showSlide(n) {
 }
 
 
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});
+
+
+
+// GREENSOCK
+gsap.registerPlugin(ScrollTrigger);
+
+ gsap.to(".b",{
+    x:400,
+    duration: 3,
+    ScrollTrigger:{
+        trigger: ".b",
+        markers: true,
+        toggleActions: "restart pause reverse pause",
+        start: "top top ",
+        end: "+=300"
+    }
+ })
